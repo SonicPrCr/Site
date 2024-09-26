@@ -1,31 +1,94 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/style.scss">
+    <link rel="stylesheet" href="./styles/reset.scss" />
+    <link rel="stylesheet" href="./styles/style.scss" />
     <title>Vite App</title>
   </head>
   <body>
     <div id="app">
       <div class="header">
         <ul class="header__nav">
-          <li class="header__nav--list button">
-            <a href="#"><img src="./image/burger.svg" class="burger" alt="burger"></a>
-          </li>
-          <li class="header__nav--list">
-            <a href="#"><img src="./image/logo.svg" class="logo" alt="logo"></a>
-          </li>
-          <li class="header__nav--list button">
-            <a href="#"><img src="./image/tools.svg" class="tools" alt="tools"></a>
-          </li>
-          <li class="header__nav--list button">
-            <a href="#"><img src="./image/search.svg" class="search" alt="search"></a>
-          </li>
+          <div class="header__nav--leftside">
+            <li class="header__nav--list button">
+              <a href="#"
+                ><img
+                  src="./image/burger.svg"
+                  class="header__forward--link"
+                  alt="burger"
+              /></a>
+            </li>
+            <li class="header__nav--list">
+              <img src="./image/logo.svg" class="logo" alt="logo" />
+            </li>
+            <li class="header__nav--list">
+              <img
+                src="./image/separator.svg"
+                class="seperator"
+                alt="separator"
+              />
+            </li>
+          </div>
+
+          <div class="header__navigation--buttons">
+            <li class="header__nav--list button">
+              <a href="#"
+                ><img
+                  src="./image/phone.svg"
+                  class="header__forward--link"
+                  alt="tools"
+              /></a>
+            </li>
+            <li class="header__nav--list button">
+              <a href="#"
+                ><img
+                  src="./image/message.svg"
+                  class="header__forward--link"
+                  alt="message"
+              /></a>
+            </li>
+
+            <div class="header__action">
+              <li class="header__nav--list button">
+                <a href="#"
+                  ><img
+                    src="./image/Profile.svg"
+                    class="header__forward--link"
+                    alt="search"
+                /></a>
+              </li>
+
+              <li class="header__nav--list">
+                <img
+                  src="./image/separator.svg"
+                  class="seperator"
+                  alt="separator"
+                />
+              </li>
+
+              <li class="header__nav--list button">
+                <a href="#"
+                  ><img
+                    src="./image/tools.svg"
+                    class="header__forward--link"
+                    alt="search"
+                /></a>
+              </li>
+              <li class="header__nav--list button">
+                <a href="#"
+                  ><img
+                    src="./image/search.svg"
+                    class="header__forward--link"
+                    alt="search"
+                /></a>
+              </li>
+            </div>
+          </div>
         </ul>
       </div>
     </div>
-    <script type="module" src="/main.js"></script>
   </body>
 </html>
