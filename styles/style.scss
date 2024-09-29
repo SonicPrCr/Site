@@ -26,6 +26,7 @@ ul {
     gap: 17px;
     width: 100%;
     justify-content: space-between;
+ 
     &--list {
       list-style-type: none;
       cursor: pointer;
@@ -38,6 +39,10 @@ ul {
   &__navigation--buttons {
     display: flex;
     gap: 20px;
+    padding: 0px;
+    @media (min-width: 768px) {
+      display: none;
+    }
   }
 }
 
@@ -56,12 +61,30 @@ ul {
   gap: 17px;
   align-items: center;
   justify-content: flex-start;
+  padding-right: 0px;
+  
 }
 
 .header__action {
   display: none;
   gap: 20px;
+  justify-content:end;
+  
   @media (min-width: 768px) {
     display: flex;
+  }
+}
+
+.notebook__separator{
+  display: none;
+  @media (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.mobile__separator{
+  display: flex;
+  @media (min-width: 768px) {
+    display: none;
   }
 }
