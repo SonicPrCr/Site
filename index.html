@@ -5,16 +5,83 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/reset.scss" />
-    <link rel="stylesheet" href="./styles/style.scss" />
+    <link rel="stylesheet" href="/styles/global.scss" />
     <title>Vite App</title>
   </head>
   <body>
     <div id="app">
       <div class="header">
+        <aside class="menu overlay">
+          <div class="menu__nav">
+            <ul class="menu__nav--header">
+              <li>
+                <a href="#" class="button close__button"
+                  ><img src="./image/cross.svg" alt="cross"
+                /></a>
+              </li>
+              <li>
+                <a href="#" class=""
+                  ><img src="./image/logo.svg" alt="logo"
+                /></a>
+              </li>
+              <li>
+                <div class="rightside">
+                  <a href="#" class="button"
+                    ><img src="./image/search.svg" alt="search"
+                  /></a>
+                </div>
+              </li>
+            </ul>
+            <ul class="menu__list">
+              <a href="#"><li class="menu__list--items">Ремонт техники</li></a>
+              <a href="#"
+                ><li class="menu__list--items">Услуги и сервисы</li></a
+              >
+              <a href="#"
+                ><li class="menu__list--items">Корпоративным клиентам</li></a
+              >
+              <a href="#"
+                ><li class="menu__list--items">Продавцам техники</li></a
+              >
+              <a href="#"><li class="menu__list--items">Партнерам</li></a>
+              <a href="#"><li class="menu__list--items">Производителям</li></a>
+              <a href="#"
+                ><li class="menu__list--items">Наши сервисные центры</li></a
+              >
+              <a href="#"><li class="menu__list--items">Контакты</li></a>
+            </ul>
+            <ul class="menu__icons">
+              <a href="#" class="button">
+                <li>
+                  <img src="./image/phone.svg" alt="phone" />
+                </li>
+              </a>
+              <a href="#" class="button">
+                <li>
+                  <img src="./image/message.svg" alt="message" />
+                </li>
+              </a>
+              <a href="#" class="button">
+                <li>
+                  <img src="./image/Profile.svg" alt="message" />
+                </li>
+              </a>
+            </ul>
+            <ul class="menu__mail-num">
+              <li>mail@cps.com</li>
+              <li class="menu__mail-num--number">8 800 890 8900</li>
+            </ul>
+            <ul class="menu__lang">
+              <a href="#"><li>RU</li></a>
+              <a href="#"><li>EN</li></a>
+              <a href="#"><li>CH</li></a>
+            </ul>
+          </div>
+        </aside>
         <ul class="header__nav">
           <div class="header__nav--leftside">
-            <li class="header__nav--list button">
-              <a href="#"
+            <li class="header__nav--list">
+              <a href="#" class="button burger"
                 ><img
                   src="./image/burger.svg"
                   class="header__forward--link"
@@ -31,7 +98,9 @@
               </li>
             </div>
             <li class="header__nav--list">
-              <img src="./image/logo.svg" class="logo" alt="logo" />
+              <a href="#">
+                <img src="./image/logo.svg" class="logo" alt="logo" />
+              </a>
             </li>
             <div class="mobile__separator">
               <li class="header__nav--list">
@@ -42,33 +111,35 @@
                 />
               </li>
             </div>
-            
           </div>
           <div class="header__action">
-            <li class="header__nav--list button">
-              <a href="#"
-                ><img
+            <a href="#">
+              <li class="header__nav--list button">
+                <img
                   src="./image/phone.svg"
                   class="header__forward--link"
                   alt="phone"
-              /></a>
-            </li>
-            <li class="header__nav--list button">
-              <a href="#"
-                ><img
+                />
+              </li>
+            </a>
+            <a href="#">
+              <li class="header__nav--list button">
+                <img
                   src="./image/message.svg"
                   class="header__forward--link"
                   alt="message"
-              /></a>
-            </li>
-            <li class="header__nav--list button">
-              <a href="#"
-                ><img
+                />
+              </li>
+            </a>
+            <a href="#">
+              <li class="header__nav--list button">
+                <img
                   src="./image/Profile.svg"
                   class="header__forward--link"
                   alt="search"
-              /></a>
-            </li>
+                />
+              </li>
+            </a>
 
             <li class="header__nav--list">
               <img
@@ -77,44 +148,49 @@
                 alt="separator"
               />
             </li>
-            <li class="header__nav--list button">
-              <a href="#"
-                ><img
+            <a href="#">
+              <li class="header__nav--list button">
+                <img
                   src="./image/tools.svg"
                   class="header__forward--link"
                   alt="tools"
-              /></a>
-            </li>
-            <li class="header__nav--list button">
-              <a href="#"
-                ><img
-                  src="./image/search.svg"
+                />
+              </li>
+            </a>
+            <a href="#">
+              <li class="header__nav--list button">
+                <img
+                  src="./image/search_icon.svg"
                   class="header__forward--link"
-                  alt="search"
-              /></a>
-            </li>
+                  alt="search_icon"
+                />
+              </li>
+            </a>
           </div>
           <div class="header__navigation--buttons">
-            <li class="header__nav--list button">
-              <a href="#"
-                ><img
+            <a href="#">
+              <li class="header__nav--list button">
+                <img
                   src="./image/tools.svg"
                   class="header__forward--link"
                   alt="tools"
-              /></a>
-            </li>
-            <li class="header__nav--list button">
-              <a href="#"
-                ><img
-                  src="./image/search.svg"
+                />
+              </li>
+            </a>
+            <a href="#">
+              <li class="header__nav--list button">
+                <img
+                  src="./image/search_icon.svg"
                   class="header__forward--link"
-                  alt="search"
-              /></a>
-            </li>
+                  alt="search_icon"
+                />
+              </li>
+            </a>
           </div>
-          
         </ul>
       </div>
     </div>
   </body>
+
+  <script src="./main.js"></script>
 </html>
