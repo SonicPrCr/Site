@@ -23,13 +23,13 @@
 }
 
 @font-face {
-  font-family: "TT Lakes Condensed";
-  src: url("TTLakesCondensed-Bold.eot");
+  font-family: "TT Lakes Bold";
+  src: url("./TTLakesCondensed-Bold.eot");
   src: local("TT Lakes Condensed Bold"), local("TTLakesCondensed-Bold"),
-    url("TTLakesCondensed-Bold.eot?#iefix") format("embedded-opentype"),
-    url("TTLakesCondensed-Bold.woff2") format("woff2"),
-    url("TTLakesCondensed-Bold.woff") format("woff"),
-    url("TTLakesCondensed-Bold.ttf") format("truetype");
+    url("./TTLakesCondensed-Bold.eot") format("embedded-opentype"),
+    url("./TTLakesCondensed-Bold.woff2") format("woff2"),
+    url("./TTLakesCompressed-Black.woff") format("woff"),
+    url("./TTLakesCondensed-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }

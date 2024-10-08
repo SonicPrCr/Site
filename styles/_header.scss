@@ -8,17 +8,15 @@
   position: relative;
   padding: 0px 16px;
 
-  @media (min-width: 1120px) {
-    display: none;
-  }
-  
-
   &__nav {
     display: flex;
     align-items: center;
     gap: 17px;
     width: 100%;
     justify-content: space-between;
+    @media (min-width: 1120px) {
+      display: none;
+    }
 
     &--list {
       list-style-type: none;
@@ -87,11 +85,14 @@
   display: none;
   height: 100vh;
   width: 360px;
+  background-color: white;
   z-index: 10;
+  margin: 0px;
   &__list {
     display: flex;
     flex-direction: column;
     gap: 24px;
+    margin: 0px;
     &--items {
       font-family: "TT Lakes Medium";
       font-weight: 300;
@@ -107,11 +108,14 @@
     margin: 0;
     padding: 0px 15px;
     gap: 1px;
+    margin-bottom: 38px;
+    justify-content: space-between;
     &--header {
       display: flex;
       gap: 17px;
       align-items: center;
       justify-content: flex-start;
+      margin: 15px 0px 36px 0px;
     }
   }
   &__icons {
@@ -120,6 +124,7 @@
     align-items: center;
     justify-content: flex-start;
     padding-right: 0px;
+    margin-bottom: 16px;
   }
   &__mail-num {
     display: flex;
@@ -130,7 +135,9 @@
     font-size: 16px;
     letter-spacing: -0.2px;
     color: black;
+    margin-bottom: 8px;
     &--number {
+      font-family: "TT Lakes Bold";
       font-size: 24px;
       font-weight: 500;
     }
@@ -138,7 +145,11 @@
   &__lang {
     display: flex;
     gap: 16px;
-    color: black;
+    font-family: "TT Lakes Medium";
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: -0.2px;
+    margin: 0px;
   }
   &__lang a {
     color: black;
@@ -148,14 +159,19 @@
 .overlay__open {
   display: flex;
   left: 0;
-  
+}
+
+.PC__header {
+  display: none;
+  @media (min-width: 1120px) {
+    display: flex;
+    left: 0;
+  }
 }
 
 .overlay {
-  
 }
-aside{
-  
+aside {
 }
 
 ul {
